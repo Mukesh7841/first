@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<title>practical 6 </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="600.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+
+<style>
+
+
+
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+/* rename */
+
+.row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+
+
+
+
+<body class="black">
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="sidebar bar-block small hide-small center">
+  <!-- Avatar image in top left corner -->
+  <img src="logo.jpg" style="width:100%" >
+  <a href="#" class="bar-item button padding-large black">
+    <i class="fa fa-home xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="bar-item button padding-large hover-black">
+    <i class="fa fa-user xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#photos" class="bar-item button padding-large hover-black">
+    <i class="fa fa-eye xxlarge"></i>
+    <p>PROJECTS</p>
+  </a>
+  <a href="#contact" class="bar-item button padding-large hover-black">
+    <i class="fa fa-envelope xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+  </nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="top hide-large hide-medium" id="myNavbar">
+  <div class="bar black opacity hover-opacity-off center small">
+    <a href="#" class="bar-item button" style="width:25% !important">HOME</a>
+    <a href="#about" class="bar-item button" style="width:25% !important">ABOUT</a>
+    <a href="#photos" class="bar-item button" style="width:25% !important">PHOTOS</a>
+    <a href="#contact" class="bar-item button" style="width:25% !important">CONTACT</a>
+    <a href="#video" class="bar-item button" style="width:25% !important">VIDEO</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="container padding-32 center black" id="home">
+    <h1 class="jumbo"><span class="hide-small">I'm</span> Mukesh Choudhary.</h1>
+    <h2><p>Eideo Editor and Web Designer.</p></h2>>
+    <img src="profile pic.jpg" alt="boy" class="image" width="992" height="1108">
+  </header>
+
+  <!-- About Section -->
+  <div class="content justify text-grey padding-64" id="about">
+    <h2 class="text-light-grey">Mukesh Choudhary</h2>
+    <hr style="width:200px" class="opacity">
+    <p>Hello, My Self Mukesh Choudhary I am Studing in SYCM 1 at K.K. Wagh Polytechnic Nashik Maharastra I am 17 years old  i am learning html and Css Nowasdays
+    </p>
+    <h3 class="padding-16 text-light-grey">My Skills</h3>
+    
+    <p class="wide">Web Design</p>
+    <div class="white">
+      <div class="dark-grey" style="height:28px;width:85%"></div>
+    </div>
+    <p class="wide">Video Editing</p>
+    <div class="white">
+      <div class="dark-grey" style="height:28px;width:60%"></div>
+    </div>
+    <p class="wide">Photoshop</p>
+    <div class="white">
+      <div class="dark-grey" style="height:28px;width:40%"></div>
+    </div><br>
+    
+    <div class="row center padding-16 section light-grey">
+      <div class="quarter section">
+        <span class="xlarge">2+</span>
+        <span><b>Years </b></span><br>
+        Experience
+      </div>
+      <div class="quarter section">
+        <span class="xlarge">15+</span><br>
+        Projects Done
+      </div>
+      <div class="quarter section">
+        <span class="xlarge">11+</span><br>
+        Happy Clients
+      </div>
+      <div class="quarter section">
+        <span class="xlarge">10+</span><br>
+        Meetings
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+  <!-- End About Section -->
+  </div>
+  
+  <!-- Portfolio Section -->
+  <div class="padding-64 content" id="photos">
+    <h2 class="text-light-grey">My Photos</h2>
+    <hr style="width:200px" class="opacity">
+
+    <!-- Grid for photos -->
+    <div class="row-padding" style="margin:0 -16px">
+      <div class="half">
+        <img src="streetart.jpg" style="width:100%">
+        <img src="streetart2.jpg" style="width:100%">
+        <img src="streetart3.jpg" style="width:100%">
+      </div>
+
+      <div class="half">
+        
+        <img src="streetart5.jpg" style="width:100%">
+        <img src="streetart2.jpg" style="width:100%">
+        <img src="streetart3.jpg" style="width:100%">
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- Contact Section -->
+  <div class="padding-64 content text-grey" id="contact">
+    <h2 class="text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="opacity">
+
+    <div class="section">
+           <p><i class="fa fa-map-marker fa-fw text-white xxlarge margin-right"></i> Nashik, MH</p>
+      <p><i class="fa fa-phone fa-fw text-white xxlarge margin-right"></i> Phone: +91 7841950547</p>
+      <p><i class="fa fa-envelope fa-fw text-white xxlarge margin-right"> </i> Email: choudharm187@mail.com</p>
+    </div><br>
+    <p>Let's get in touch. Send me a message:</p>
+
+    <form action="/action_page.php" target="_blank">
+      <p><input class="input padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="input padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="input padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="input padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="button light-grey padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>
+     
+</div>
+</body>
+</html>
